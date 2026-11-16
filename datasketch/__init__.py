@@ -11,6 +11,7 @@ from datasketch.aio import AsyncMinHashLSH  # Instantiation requires motor/redis
 from datasketch.b_bit_minhash import bBitMinHash
 from datasketch.hashfunc import sha1_hash32, sha1_hash64
 from datasketch.hnsw import HNSW
+from datasketch.hnsw_eval import HNSWRunArchive
 from datasketch.hyperloglog import HyperLogLog, HyperLogLogPlusPlus
 from datasketch.lean_minhash import LeanMinHash
 from datasketch.lsh import MinHashLSH
@@ -26,6 +27,7 @@ WeightedMinHashLSHForest = MinHashLSHForest
 
 __all__ = [
     "HNSW",
+    "HNSWRunArchive",
     "AsyncMinHashLSH",
     "HyperLogLog",
     "HyperLogLogPlusPlus",
